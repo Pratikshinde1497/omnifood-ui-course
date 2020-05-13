@@ -43,6 +43,10 @@ section{
     padding: 80px 0;
 }
 
+/**********************************/
+/*          HEADERS               */
+/**********************************/
+
 h1,
 h2,
 h3 {
@@ -84,6 +88,56 @@ h2:after{
 }
 
 /* ***************************** */
+/*              FEATURES         */
+/* **************************** */
+
+.section-features .long-copy{
+    margin-bottom: 30px;
+}
+
+
+/* ***************************** */
+/*              MEALS           */
+/* **************************** */
+
+.section-favorite-meals{
+    padding: 0;
+}
+
+.meals-showcase{
+    list-style: none;
+    width: 100%;
+}
+
+.meals-showcase li{
+    display: block;
+    float: left;
+    width: 25%;
+}
+
+.meal-photo{
+    width: 100%;
+    margin: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+.meal-photo img{
+    opacity: .7;
+    width: 100%;
+    height: auto;
+    transform: scale(1.03);
+    transition: transform .5s, opacity .5s;
+}
+
+.meal-photo img:hover{
+    opacity: .9;
+    transform: scale(1.15);
+}
+
+
+
+/* ***************************** */
 /*              PARAGRAPH       */
 /* **************************** */
 
@@ -91,7 +145,6 @@ h2:after{
     width: 68%;
     line-height: 150%;
     margin-left: 16%;
-    margin-bottom: 10px;
 }
 
 .box p{
