@@ -10,6 +10,12 @@ dark-orange : #cf6d17
 
 **/
 
+/*
+ion-icon{
+    visibility: visible;
+}
+*/
+
 *{
     margin: 0;
     box-sizing: border-box;
@@ -89,9 +95,22 @@ h2:after{
 }
 
 
+/* ********* LINKS  **********  **/
 
+a:link,
+a:visited{
+    color: #e67e22;
+    text-decoration: none;
+    padding-bottom: 1px;
+    border-bottom: 1px solid #e67e22;
+    transition: color .2s, border-bottom .2s;
+}
 
-
+a:hover,
+a:active{
+    color: currentColor;
+    border-bottom: 1px solid transparent;
+}
 /* ***************************** */
 /*              PARAGRAPH       */
 /* **************************** */
@@ -123,6 +142,17 @@ h2:after{
     visibility: visible;
     margin: 0 auto;
 }
+
+.small-icons{
+    display: inline-block;
+    width: 30px;
+    color: #e67e22;
+    font-size: 120%;
+    line-height: 120%;
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 
 /* ***************************** */
 /*              BTN             */
@@ -182,10 +212,12 @@ h2:after{
 /* *********************************************************************** */
 
 header{
+    background-image: -webkit-linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(images/hero.jpg);
     background-size: cover;
     background-position: center;
     height: 100vh;
+    background-attachment: fixed;
 }
 
 .hero-text-box{
@@ -193,6 +225,7 @@ header{
     width: 1140px;
     top: 50%;
     left: 50%;
+    
     transform: translate(-50%, -50%);
 }
 
@@ -343,4 +376,84 @@ header{
     height: 50px;
     width: auto;
     margin-right: 10px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
+/* ***************************** */
+/*        OUR CITIES            */
+/* **************************** */
+
+.section-cities{
+    overflow: hidden;
+}
+
+.city:hover,
+.city:active{
+     box-shadow: 0px 0px 15px -5px gray;
+}
+
+.city img{
+    width: 100%;
+    height: auto;
+    margin-bottom: 15px;
+}
+
+
+.city-feature{
+    margin: 0 auto 5px auto;
+}
+
+
+/* ***************************** */
+/*        OUR COSTOMERS          */
+/* **************************** */
+
+.section-testimonials{
+    background-image:  linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(images/back-customers.jpg);
+    background-position: center;
+    background-size: cover;
+    color: white;
+    background-attachment: fixed;
+}
+
+blockquote{
+    font-style: italic;
+    padding: 2%;
+    line-height: 145%;
+    position: relative;
+    margin-top: 30px;
+}
+
+blockquote:before{
+    content: "\201C";
+    display: block;
+    font-size: 500%;
+    position: absolute;
+    left: -10px;
+    top: -5px;
+}
+
+blockquote:first-letter{
+    font-size: 150%;
+    font-weight: 400;
+    font-style: normal;
+}
+
+cite{
+    margin-top: 50px;
+    margin-right: 10px;
+    display: block;
+    float: right;
+    font-size: 90%;
+}
+
+cite img{
+    height: 45px;
+    border-radius: 50%;
+    margin-right: 15px;
+    vertical-align: middle;
 }
