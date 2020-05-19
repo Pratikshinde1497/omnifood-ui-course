@@ -47,8 +47,12 @@ html{
 
 section{
     padding: 80px 0;
+    
 }
 
+li{
+    list-style: none;
+}
 
 /**********************************/
 /*          HEADERS               */
@@ -145,7 +149,7 @@ a:active{
 
 .small-icons{
     display: inline-block;
-    width: 30px;
+    width: 25px;
     color: #e67e22;
     font-size: 120%;
     line-height: 120%;
@@ -159,7 +163,8 @@ a:active{
 /* **************************** */
 
 .btn:link,
-.btn:visited{
+.btn:visited,
+input[type=submit]{
     display: inline-block;
     color: #fff;
     padding: 10px 30px;
@@ -169,7 +174,8 @@ a:active{
     transition: background-color .3s, border .2s, color .2s;
 }
 .btn:hover,
-.btn:active{
+.btn:active,
+input[type=submit]{
     background-color: #cf6d17;
 }
 
@@ -179,7 +185,10 @@ a:active{
 /* ******************************* */
 
 .btn-full:link,
-.btn-full:visited{
+.btn-full:visited,
+input[type=submit]:link,
+input[type=submit]:visited
+{
     background-color: #e67e22;
     border: 1px solid #e67e22;
     margin-right: 15px;
@@ -195,12 +204,16 @@ a:active{
 /* ******************************* */
 
 .btn-ghost:link,
-.btn-ghost:visited{
+.btn-ghost:visited,
+input[type=submit]:link,
+input[type=submit]:visited{
     border: 1px solid #e67e22;
     color: #e67e22;
 }
 .btn-ghost:hover,
-.btn-ghost:active{
+.btn-ghost:active,
+input[type=submit]:hover,
+input[type=submit]:active{
     color: #fff;
     background-color: #cf6d17;
     border-color: #cf6d17;
@@ -238,7 +251,6 @@ header{
 
 .main-nav{
     float: right;
-    list-style: none;
     margin-top: 55px;
 }
 
@@ -284,7 +296,6 @@ header{
 }
 
 .meals-showcase{
-    list-style: none;
     width: 100%;
 }
 
@@ -389,6 +400,7 @@ header{
 
 .section-cities{
     overflow: hidden;
+    background-color: azure;
 }
 
 .city:hover,
@@ -404,13 +416,22 @@ header{
 
 
 .city-feature{
-    margin: 0 auto 5px auto;
+    margin-top: 10px;
+    font-size: 95%;
+    margin-left: 3%;
+}
+.city-feature:first-of-type{
+    margin-top: 20px;
+}
+.city-feature:last-of-type{
+    margin-bottom: 20px;
 }
 
 
 /* ***************************** */
 /*        OUR COSTOMERS          */
 /* **************************** */
+
 
 .section-testimonials{
     background-image:  linear-gradient(rgba(0,0,0,.8), rgba(0,0,0,.8)), url(images/back-customers.jpg);
@@ -425,7 +446,7 @@ blockquote{
     padding: 2%;
     line-height: 145%;
     position: relative;
-    margin-top: 30px;
+    margin-top: 45px;
 }
 
 blockquote:before{
@@ -456,4 +477,110 @@ cite img{
     border-radius: 50%;
     margin-right: 15px;
     vertical-align: middle;
+}
+
+
+/* ***************************** */
+/*        OUR PLANS              */
+/* **************************** */
+
+.section-signup-plans{
+/*    height: 100vh;*/
+    background-color: #f4f4f4;
+}
+
+.section-signup-plans h3{
+    font-size: 120%;
+    text-align: left;
+}
+
+.plan-box{
+    padding: 30px;
+    box-shadow: 0px 0px 5px 0px gray;
+    background-color: #fff;
+    border-radius: 5px;
+}
+.plan-box:hover,
+.plan-box:active{
+    box-shadow: 0px 0px 15px 0px gray;
+}
+
+.month-price{
+    font-size: 300%;
+    line-height: 150%;
+    color: #e67e22;
+    font-weight: 100;
+}
+.month-price span{
+    font-size: 30%;
+    color: #cf6d17;
+    font-weight: 300;
+}
+
+.meal-price{
+    font-size: 80%;
+    line-height: 130%;    
+    margin-bottom: 10px;
+}
+
+.plan-box li{
+    font-style: italic;
+    padding: 10px;
+    font-size: 90%;
+}
+
+.checkmark-icon{
+    color: #e67e22;
+    font-size: 140%;    
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.sign-btn{
+    text-align: center;
+}
+.sign-btn a{
+    margin-top: 30px;
+    display: inline-block;
+}
+
+
+
+/* ***************************** */
+/*        CONTACT FORM           */
+/* **************************** */
+
+.section-feedback{
+    background-color: floralwhite;
+}
+
+.contact-form{
+    width: 60%;
+    margin: 0 auto;
+}
+
+input[type=text],
+input[type=email],
+select,
+textarea{
+    padding: 7px;
+    width: 100%;
+    border-radius: 3px;
+    border: 1px solid #b4b4b4;
+}
+
+*:focus{
+    outline: none;
+}
+
+input[type=checkbox]{
+    margin: 10px 5px 10px 0;
+}
+
+textarea{
+    height: 100px;
+}
+
+input[type=submit]{
+    border: 0;
 }
