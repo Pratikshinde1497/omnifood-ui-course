@@ -1,0 +1,142 @@
+
+/** FOR BIG TABLES TO 1200px **/
+@media only screen and (max-width: 1200px){
+    .hero-text-box{
+        width: 100%;
+        padding: 0 2%;
+    }
+    
+    .row{
+        padding: 0 2%;
+    }
+}
+
+
+/** FOR SMALL TABLES TO BIG TABLES UPTO 1023px **/
+@media only screen and (max-width: 1023px){
+    
+/*    Reusables    */
+    body{ font-size: 18px; }
+    section{ padding: 60px 0;}
+    
+/*    Section: Features;    */
+    .long-copy{
+        width: 80%;
+        margin-left: 10%;
+    }
+    
+/*    Section: How Works;    */
+    .steps-box:first-child{
+        margin-top: 50px;
+    }
+    .steps-box:last-child{
+        margin-top: 60px;
+    }
+    .step{
+        margin-bottom: 35px;
+    }
+    .step:last-of-type{
+        margin-bottom: 70px;
+    }
+    .step div{
+        margin-right: 15px;
+        width: 50px;
+        height: 50px;
+        
+    }
+    
+/*   Sectin: Our Cities;    */
+    .city-feature{
+        font-size: 85%;
+    }
+    
+/*    Section: Plans;    */
+    .month-price{
+        font-size: 250%;
+    }
+    .plan-box{
+        padding: 20px;
+    }
+    .plan-box li{
+        padding: 10px 0;
+        font-size: 85%;
+    }
+    .checkmark-icon{
+        margin-right: 10px;
+    }
+    
+/*    Sectiom: Feedback form;      */
+    .contact-form{
+        width: 80%;
+    }
+}
+
+
+/** FOR SMALL PHONES TO SMALL TABLES UPTO 767px **/
+@media only screen and (max-width: 767px){
+    .logo{
+        height: 75px;
+    }
+    body{ font-size: 16px; }
+    .row,
+    .hero-text-box{ margin: 0 4%; }
+    section{ padding: 30px 0; }
+    .col, .col:first-child { width: 75%; margin: 2% 12.5%;}
+    h1{ font-size: 180%; }
+    h2{ font-size: 150%; }
+    .main-nav { display: none; }
+    
+    .long-copy{ width: 100%; margin: 0%;}
+    
+    .plan-box{
+        padding: 30px;;
+    }
+
+    .steps-box:first-child{
+        text-align: center;
+        padding-right: 0;
+    }
+    .steps-box:last-child{
+        margin-top: 30px;
+        padding-left: 0;
+    }
+    .step, .step:last-of-type{
+        margin-bottom: 20px;
+    }
+    .btn-app img{
+        height: 30px;
+    }
+    .city-feature{
+        font-size: 100%;
+    }
+    .contact-form, .row{ width: 100%; margin: 0; }
+
+    footer{
+        padding: 10px;
+    }
+
+    .social-links{
+        float: left;
+    }
+
+}
+
+
+/** FOR SMALL PHONES UPTO 480px **/
+@media only screen and (max-width: 480px){
+    body{
+        font-size: 14px;
+    }
+    h1{ font-size: 140%;    }
+    h2{ font-size: 110;     }
+    .row, .hero-text-box{ margin: 0 4%; }
+
+    .btn-full, .btn-ghost{ padding: 10 20;}
+    .step div{
+        height: 40px;
+        width: 40px;
+    }
+    .col, .col:first-child { width: 80%; margin: 2% 10%;}
+    .long-copy{ width: 90%; margin: 0 auto;}
+
+}

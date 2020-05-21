@@ -407,7 +407,7 @@ header{
 
 .city:hover,
 .city:active{
-     box-shadow: 0px 0px 15px -5px gray;
+    box-shadow: 0px 0px 15px -5px gray;
 }
 
 .city img{
