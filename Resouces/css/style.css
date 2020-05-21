@@ -22,13 +22,15 @@ ion-icon{
     padding: 0;
 }
 
-html{
+html,
+body{
     background-color: rgb(253, 239, 239);
     color: rgb(73, 73, 73);
     font-family: 'Lato', sans-serif;
     font-size: 20px;
     font-weight: 300;
     text-rendering: optimizeLegibility;
+    overflow-x: hidden;
 }
 
 
@@ -584,3 +586,92 @@ textarea{
 input[type=submit]{
     border: 0;
 }
+
+
+
+/* ***************************** */
+/*        FOOTER:                */
+/* **************************** */
+
+
+footer{
+    background-color: #1a1919;
+    color: #444555;
+    padding: 50px;
+}
+
+.footer-nav{
+    float: left;
+}
+
+.social-links{
+    float: right;
+}
+
+.footer-nav li,
+.social-links li{
+    display: inline-block;
+    margin-right: 20px;
+}
+.footer-nav li:last-child,
+.social-links li:last-child{
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited
+{
+    border: 0;
+    color: #818181;
+    transition: color .2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active{
+    color: #d4d4d4;
+}
+
+.social-links li a:link,
+.social-links li a:visited{
+    font-size: 140%;
+}
+
+.logo-fb,
+.logo-insta,
+.logo-whapp,
+.logo-twttr{
+    transition: color .2s;
+}
+
+/****- SOCIAL LINKS HOVER EFFECT -****/
+
+.logo-fb:hover,
+.logo-fb:active{
+    color: #1877f2;
+}
+
+.logo-twttr:hover,
+.logo-twttr:active{
+    color: #1da1f2;
+}
+
+.logo-insta:hover,
+.logo-insta:active{
+    color: #c32aa3;
+}
+
+.logo-whapp:hover,
+.logo-whapp:active{
+    color: #25d366;
+}
+
+footer p{
+    text-align: center;
+    font-size: 90%;
+    margin-top: 30px;
+}
+
+
+/********-THANK YOU!-*******/
